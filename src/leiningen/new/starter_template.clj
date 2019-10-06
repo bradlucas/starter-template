@@ -16,7 +16,7 @@
              ["README.md"     (render "README.md" data)]
              ["project.clj"   (render "project.clj" data)]
 
-             ["doc/intro.md"  (render "doc/intro.md")]
+             ["doc/intro.md"  (render "doc/intro.md" data)]
 
              ;; resources
              ["resources/public/css/bootswatch-lux.min.css"  (render "resources/public/css/bootswatch-lux.min.css")]
@@ -34,19 +34,19 @@
              ["resources/sql/test-data.sql"    (render "resources/sql/test-data.sql")]
 
 
-             ["resources/templates/base.html"                      (render "resources/templates/base.html")]
+             ["resources/templates/base.html"                      (render "resources/templates/base.html" data)]
              ["resources/templates/account/profile.html"           (render "resources/templates/account/profile.html")]
              ["resources/templates/auth/login-error-email.html"    (render "resources/templates/auth/login-error-email.html")]
              ["resources/templates/auth/login-error-password.html" (render "resources/templates/auth/login-error-password.html")]
              ["resources/templates/auth/login.html"                (render "resources/templates/auth/login.html")]
-             ["resources/templates/static/about.html"              (render "resources/templates/static/about.html")]
+             ["resources/templates/static/about.html"              (render "resources/templates/static/about.html" data)]
              ["resources/templates/static/error.html"              (render "resources/templates/static/error.html")]
-             ["resources/templates/static/index.html"              (render "resources/templates/static/index.html")]
+             ["resources/templates/static/index.html"              (render "resources/templates/static/index.html" data)]
              
 
              ;; scripts
-             ["scripts/rebuild-db.sh" (render "scripts/rebuild-db.sh")]
-             ["scripts/test-data.sh" (render "scripts/test-data.sh")]
+             ["scripts/rebuild-db.sh" (render "scripts/rebuild-db.sh" data)]
+             ["scripts/test-data.sh" (render "scripts/test-data.sh" data)]
 
              ["src/{{sanitized}}/config.clj" (render "src/starter/config.clj" data)]
              ["src/{{sanitized}}/core.clj" (render "src/starter/core.clj" data)]
@@ -60,7 +60,7 @@
 
 
 
-             ["test/{{sanitized}}/core_test.clj" (render "test/starter/core_test.clj")]
+             ["test/{{sanitized}}/core_test.clj" (render "test/starter/core_test.clj" data)]
 
 
 
