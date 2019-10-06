@@ -29,9 +29,9 @@
              ["resources/public/js/jquery.min.js"            (render "resources/public/js/jquery.min.js")]
              ["resources/public/js/popper.min.js"            (render "resources/public/js/popper.min.js")]
 
-             ["resources/sql/create-table.sql" (render "resources/sql/create-tables.sql")]
-             ["resources/sql/queries.sql"      (render "resources/sql/queries.sql")]
-             ["resources/sql/test-data.sql"    (render "resources/sql/test-data.sql")]
+             ["resources/sql/create-tables.sql" (render "resources/sql/create-tables.sql")]
+             ["resources/sql/queries.sql"       (render "resources/sql/queries.sql")]
+             ["resources/sql/test-data.sql"     (render "resources/sql/test-data.sql")]
 
 
              ["resources/templates/base.html"                      (render "resources/templates/base.html" data)]
@@ -61,8 +61,5 @@
 
 
              ["test/{{sanitized}}/core_test.clj" (render "test/starter/core_test.clj" data)]
-
-
-
 
 )))
