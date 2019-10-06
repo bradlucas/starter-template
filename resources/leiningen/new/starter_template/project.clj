@@ -25,8 +25,8 @@
   :repl-options {:init-ns {{name}}.core}
 
   :plugins [[lein-ring "0.12.5"]]
-  :ring {:init starter.core/initialize
-         :handler starter.handler/app}
+  :ring {:init {{name}}.core/initialize
+         :handler {{name}}.handler/app}
   :profiles
   {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
                         [ring/ring-mock "0.3.2"]]}
