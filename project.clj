@@ -1,4 +1,4 @@
-(defproject starter-template/lein-template "0.1.0"
+(defproject starter-template/lein-template "0.1.1"
   :description "A leiningen template to build instances of starter projects"
   :url "https://github.com/bradlucas/starter-template"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
