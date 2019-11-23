@@ -9,7 +9,9 @@
   [name]
   (let [data {:name name
               :sanitized (name-to-path name)}]
+
     (main/info "Generating fresh 'lein new' starter-template project.")
+
     (->files data
              [".gitignore"    (render "gitignore")]
              ["LICENSE"       (render "LICENSE")]
@@ -45,8 +47,9 @@
              
 
              ;; scripts
-             ["scripts/rebuild-db.sh" (render "scripts/rebuild-db.sh" data)]
-             ["scripts/test-data.sh" (render "scripts/test-data.sh" data)]
+             ["scripts/rebuild-db.sh" (render "scripts/rebuild-db.sh" data) :executable true]
+             ["scripts/test-data.sh" (render "scripts/test-data.sh" data)   :executable true]
+
 
              ["src/{{sanitized}}/config.clj" (render "src/starter/config.clj" data)]
              ["src/{{sanitized}}/core.clj" (render "src/starter/core.clj" data)]
