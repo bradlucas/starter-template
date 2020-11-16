@@ -1,5 +1,7 @@
 # starter-template
 
+[![Clojars Project](https://img.shields.io/clojars/v/starter-template/lein-template.svg)](https://clojars.org/starter-template/lein-template)
+
 A leiningen template to build instances of starter projects.
 
 
